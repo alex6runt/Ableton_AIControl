@@ -14,14 +14,13 @@ A Python-based MIDI control system for Ableton Live that enables AI-powered auto
 
 - Ableton Live (tested with Live 11+)
 - Python 3.7+
-- `mido` library for MIDI communication
-- `python-rtmidi` for virtual MIDI port support
+- Required packages (see `requirements.txt`)
 
 ## Installation
 
 1. Install Python dependencies:
 ```bash
-pip install mido python-rtmidi
+pip install -r requirements.txt
 ```
 
 2. Set up virtual MIDI ports:
@@ -57,7 +56,7 @@ controller.load_midi_clip("/path/to/clip.mid", track=0, scene=0)
 
 ## Integration with MIDI Generation
 
-This project works seamlessly with the `midi-gen` tool to generate and load clips directly into Ableton.
+This project works seamlessly with the [Generate_midi](https://github.com/alex6runt/Generate_midi) tool to generate and load clips directly into Ableton.
 
 ## License
 
